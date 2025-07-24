@@ -23,6 +23,14 @@ heros[0]="salman";
 const anotherHeros =["salma","ritik",12,13];
 //console.log(anotherHeros.length);
 
+//Array Destructuring : Array destructuring se hum array ke elements ko alag variables me assign kar sakte hain position ke mutabiq.
+const arr = ["Mubeen", 24];
+const [name, age] = arr;
+console.log(name); // "Mubeen"
+console.log(age);  // 24
+
+
+
 
 //*************** Methods ************ */
 
@@ -156,3 +164,7 @@ let myarray = [1, 2, [3, [4, 5]]];
 let result = myarray.flat(2); 
 console.log(result); // [1, 2, 3, 4, 5]
 //flat() ek array method hai jo nested (andhar wale) arrays ko "flatten" karta hai.Yani agar array ke andar aur arrays hain, to wo unhe baahir nikal kar ek single array bana deta hai.
+
+
+
+
