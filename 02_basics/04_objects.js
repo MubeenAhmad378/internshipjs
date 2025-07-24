@@ -95,4 +95,38 @@ console.log(course["courseInstructor"]);
 const{courseInstructor,price}= course;
 console.log(courseInstructor,price);
 
+const{courseInstructor:Instructor}= course;
+console.log(Instructor);
+
+
+
+
+
+//for...in (loop over object keys).Object ke har key ke liye loop.
+const user1 = { name: "Mubeen", age: 24 };
+for (let key in user1) {
+  console.log(key, user1[key]);
+}
+
+
+
+//********************************* json method *********** */
+
+//JSON.stringify(obj). object ko string mein convert karta hai (mostly API responses mein).
+const user2 = { name: "Mubeen" };
+console.log(JSON.stringify(user2)); // '{"name":"Mubeen"}'
+
+
+//JSON.parse(string).String ko phir se object mein badal deta hai.
+
+const str = '{"name":"Mubeen"}';
+const objstr = JSON.parse(str);
+console.log(objstr); // { name: 'Mubeen' }
+
+
+
+// Spread Operator {...obj}. Object copy karne ya merge karne ke liye.
+const username = { name: "Mubeen" };
+const copyobj = { ...user, age: 24 };
+console.log(copyobj); // { name: "Mubeen", age: 24 }
 
